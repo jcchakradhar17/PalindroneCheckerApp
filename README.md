@@ -1,1 +1,2 @@
 # PalindroneCheckerApp
+Based on the code above, here is how you can fill out those sections in your README.md:SectionDescriptionObjectiveTo determine if a user-provided string reads the same forwards and backwards.Flow of ProjectInput $\rightarrow$ Sanitize (remove spaces/case) $\rightarrow$ Compare characters $\rightarrow$ Output Result.Running Procedure1. Compile: javac PalindroneCheckerApp.java  2. Run: java PalindroneCheckerAppUse CaseData validation, word games, or basic algorithmic practice.
