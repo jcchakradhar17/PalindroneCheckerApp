@@ -1,17 +1,39 @@
  class PalindroneCheckerApp{
 
 
+         /**
+          * Application entry point for UC4.
+          * @param args Command-line arguments
+          */
+         public static void main(String[] args) {
 
+             // Declare and initialize the input string.
+             String input = "radar";
 
+             // Convert the string into a character array.
+             char[] chars = input.toCharArray();
 
+             // Initialize pointer at the beginning.
+             int start = 0;
 
-    public static void main(String[] args) {
+             // Initialize pointer at the end.
+             int end = chars.length - 1;
 
-        System.out.println("==============================================");
-        System.out.println("   Welcome to Palindrome Checker System");
-        System.out.println("   Version: 1.0");
-        System.out.println("==============================================");
-        System.out.println("System initialized successfully.");
+             // Assume palindrome initially.
+             boolean isPalindrome = true;
 
-    }
-}
+             // Continue comparison until pointers cross.
+             while (start < end) {
+                 if (chars[start] != chars[end]) {
+                     isPalindrome = false;
+                     break;
+                 }
+                 start++;
+                 end--;
+             }
+
+             // Display result
+             System.out.println("Input : " + input);
+             System.out.println("Is Palindrome? : " + isPalindrome);
+         }
+     }
