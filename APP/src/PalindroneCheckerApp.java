@@ -1,17 +1,18 @@
  class PalindroneCheckerApp{
 
+         public static void main(String[] args) {
 
+             String word = "madam";
+             String reversed = "";
 
+             for (int i = word.length() - 1; i >= 0; i--) {
+                 reversed = reversed + word.charAt(i);
+             }
 
-
-
-    public static void main(String[] args) {
-
-        System.out.println("==============================================");
-        System.out.println("   Welcome to Palindrome Checker System");
-        System.out.println("   Version: 1.0");
-        System.out.println("==============================================");
-        System.out.println("System initialized successfully.");
-
-    }
-}
+             if (word.equals(reversed)) {
+                 System.out.println(word + " is a palindrome.");
+             } else {
+                 System.out.println(word + " is not a palindrome.");
+             }
+         }
+     }
